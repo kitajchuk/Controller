@@ -8,7 +8,7 @@ Controller
 ## Installation
 
 ```shell
-npm install controller
+npm install properjs-controller
 ```
 
 
