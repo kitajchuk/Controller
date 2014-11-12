@@ -1,6 +1,6 @@
 {
     "title": "Controller",
-    "name": "controller",
+    "name": "properjs-controller",
     "description": "An arbitrary event and animation frame cycle class.",
     "version": "0.1.0",
     "homepage": "https://github.com/ProperJS/Controller",
