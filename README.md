@@ -16,15 +16,15 @@ npm install properjs-controller
 ```javascript
 var controller = new Controller();
 
-# Bind event
+// Bind event
 controller.on( "my-event", function () {
     // Handle event here
 });
 
-# Fire event
+// Fire event
 controller.fire( "my-event", [...pass arguments here] );
 
-# Cycle the animation frame
+// Cycle the animation frame
 controller.go(function () {
     // Handle frames here
 });
