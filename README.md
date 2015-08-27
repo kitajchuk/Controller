@@ -8,13 +8,14 @@ Controller
 ## Installation
 
 ```shell
-npm install properjs-controller
+npm install properjs-controller --save-dev
 ```
 
 
 ## Usage
 ```javascript
-var controller = new Controller();
+var Controller = require( "properjs-controller" ),
+    controller = new Controller();
 
 // Bind event
 controller.on( "my-event", function () {
