@@ -2,7 +2,7 @@
     "title": "Controller",
     "name": "properjs-controller",
     "description": "An arbitrary event and animation frame cycle class.",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "homepage": "https://github.com/ProperJS/Controller",
     "readmeFilename": "README.md",
     "contributors": [
@@ -35,5 +35,5 @@
     ],
     "scripts": {
         "test": "webpack test/test.js test/dist/common.js ; cp Controller.js test/dist/browser.js"
-    } 
+    }
 }
