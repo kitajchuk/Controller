@@ -1,32 +1,52 @@
-Controller
-==========
+ProperJS // Controller
+======================
 
-> A very useful, arbitrary event and animation frame cycle class.
+> A very useful, arbitrary event emitter and raf manager.
 
 
 
-## Installation
+### Installation
 
 ```shell
-npm install properjs-controller --save-dev
+npm i properjs-controller --save-dev
 ```
 
 
-## Usage
+### Usage
 ```javascript
-var Controller = require( "properjs-controller" ),
-    controller = new Controller();
+// Import
+import Controller from "properjs-controller";
+
+// Create instance
+const controller = new Controller();
 
 // Bind event
-controller.on( "my-event", function () {
+controller.on( "my-event", ( data ) => {
     // Handle event here
+    console.log( data );
 });
+
+// Unbind event
+controller.off( "my-event" );
 
 // Fire event
 controller.fire( "my-event", [...pass arguments here] );
 
-// Cycle the animation frame
-controller.go(function () {
+// RAF
+controller.go(() => {
     // Handle frames here
 });
+
+// Manage RAF
+controller.stop();
+controller.pause();
+controller.play();
+
+// Useful to extend Controller...
+class MyClass extends Controller {
+    constructor () {
+        super();
+        // MyClass has all of Controller's methods
+    }
+}
 ```
