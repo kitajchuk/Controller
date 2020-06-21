@@ -2,7 +2,7 @@
     "title": "Controller",
     "name": "properjs-controller",
     "description": "A very useful, arbitrary event emitter and raf manager.",
-    "version": "0.3.0",
+    "version": "0.3.1",
     "homepage": "https://github.com/ProperJS/Controller",
     "readmeFilename": "README.md",
     "contributors": [

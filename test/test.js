@@ -19,4 +19,14 @@ setTimeout(() => {
     console.log( "stopping raf" );
     controller.stop();
 
-}, 5000 );
+    console.log( "tweening" );
+    controller.tween({
+        update ( value ) {
+            console.log( "tween value", value );
+        },
+        complete ( value ) {
+            console.log( "tween done", value );
+        },
+    });
+
+}, 1000 );
